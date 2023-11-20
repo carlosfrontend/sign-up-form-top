@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Rubik+Dirt&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fira+Sans:wght@400;500;700&family=Rubik+Dirt&display=swap"
       rel="stylesheet"
     />
     <script defer src="./js/main.js"></script>
@@ -31,6 +31,7 @@
           <span
             >Logo by
             <a
+              rel="no-referrer"
               href="https://commons.wikimedia.org/wiki/File:Wikipedia_Sourcing_Month_Logo.svg"
               >SyntaxTerror</a
             ></span
@@ -40,17 +41,70 @@
         <span class="photo-mention"
           >Photo of
           <a
+            rel="no-referrer"
             href="https://unsplash.com/es/@maxitin?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
             >Max Itin</a
           >
           at
           <a
+            rel="no-referrer"
             href="https://unsplash.com/es/fotos/cordillera-nevada-ngWHU2lGjvs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
             >Unsplash</a
           ></span
         >
       </header>
-      <div id="main"></div>
+      <div id="main">
+        <div class="main-content">
+          <p>
+            This is not a real online service! You Know that you need something
+            like this in your life to help you realize your deepest dreams.
+          </p>
+          <p>Sign up now to get started.</p>
+          <p>You know you want to.</p>
+        </div>
+        <form action="" id="contact-form">
+          <h1 class="form-title">Let's do this!</h1>
+          <div class="fields-container">
+            <div class="input-group">
+              <div class="group">
+                <label for="firstname">FIRST NAME</label>
+                <input type="text" id="firstname" />
+              </div>
+              <div class="group">
+                <label for="lastname">LAST NAME</label>
+                <input type="text" id="lastname" />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <div class="group">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" />
+              </div>
+              <div class="group">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" id="phone" />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <div class="group">
+                <label for="passwod1">PASSWORD</label>
+                <input class="error" type="password" id="passwod1" />
+              </div>
+              <div class="group">
+                <label for="passwod2">CONFIRM PASSWORD</label>
+                <input class="error" type="password" id="passwod2" />
+              </div>
+            </div>
+          </div>
+          <span class="match-message">* Passwords do not match</span>
+          <div class="button-container">
+            <input type="submit" id="btn-submit" value="Create Account">
+            <p class="login-text">Already have an account? <a class="login-link" href="">Log in</a></p>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
