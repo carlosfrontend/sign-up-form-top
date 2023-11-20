@@ -72,11 +72,16 @@ body {
 
 .header-text {
   color: var(--pure-light);
-  font-size: 4.8rem;
+  font-size: 3vw;
   font-family: "Rubik Dirt", Arial, Helvetica, sans-serif;
   padding: 0;
   text-align: center;
 }
+
+.wiki-mention,
+  .photo-mention {
+    font-size: 1.4vw;
+  }
 
 .wiki-mention {
   font-family: "Didact Gothic", sans-serif;
@@ -84,7 +89,6 @@ body {
   text-align: center;
   position: relative;
   top: 22vh;
-  font-size: 1.6rem;
   line-height: 1.2;
   width: 100%;
 }
@@ -111,7 +115,6 @@ body {
   bottom: 2vh;
   color: var(--pure-light);
   width: 30%;
-  font-size: 1.6rem;
   line-height: 1.2;
   text-align: center;
 }
@@ -240,16 +243,6 @@ body {
   font-weight: 700;
 }
 
-@media screen and (max-width: 1424px) {
-  .header-text {
-    font-size: 3rem;
-  }
-  .wiki-mention,
-  .photo-mention {
-    font-size: 1.4rem;
-  }
-}
-
 .fa-eye{
   position: relative;
   bottom: 5.2vh;
@@ -260,3 +253,13 @@ body {
   border-left: 1px solid var(--eye-color);
   padding-left: .5em;
 }
+
+/* @media screen and (max-width: 1424px) {
+  .header-text {
+    font-size: 3rem;
+  }
+  .wiki-mention,
+  .photo-mention {
+    font-size: 1.4rem;
+  }
+} */
