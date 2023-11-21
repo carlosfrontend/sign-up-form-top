@@ -11,7 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fira+Sans:wght@400;500;700&family=Rubik+Dirt&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script defer src="./js/main.js"></script>
     <title>Sign-Up Form Odin Project</title>
   </head>
@@ -72,13 +78,32 @@
             <div class="input-group">
               <div class="group">
                 <label for="firstname">FIRST NAME</label>
-                <input type="text" pattern="[a-zA-Z]{2,20}" title="It must have at least 2 uppercase or lowercase letters and a maximum of 20 characters.
-                " id="firstname" minlength="2" maxlength="20"  placeholder="e.g. John" required />
+                <input
+                  type="text"
+                  pattern="[a-zA-Z]{2,20}"
+                  title="It must have at least 2 uppercase or lowercase letters and a maximum of 20 characters."
+                  id="firstname"
+                  minlength="2"
+                  maxlength="20"
+                  placeholder="e.g. John"
+                  autocomplete="given-name"
+                  required
+                />
                 <span class="validity"></span>
               </div>
               <div class="group">
                 <label for="lastname">LAST NAME</label>
-                <input type="text" pattern="[a-zA-Z]{2,20}" title="It must have at least 2 uppercase or lowercase letters and a maximum of 20 characters." id="lastname" minlength="2" maxlength="20" placeholder="e.g. Doe" required />
+                <input
+                  type="text"
+                  pattern="[a-zA-Z]{2,20}"
+                  title="It must have at least 2 uppercase or lowercase letters and a maximum of 20 characters."
+                  id="lastname"
+                  minlength="2"
+                  maxlength="20"
+                  placeholder="e.g. Doe"
+                  autocomplete="family-name"
+                  required
+                />
                 <span class="validity"></span>
               </div>
             </div>
@@ -86,13 +111,28 @@
             <div class="input-group">
               <div class="group">
                 <label for="email">EMAIL</label>
-                <input type="email" id="email" placeholder="e.g. johndoe@example.com" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,63})$" title="
-                It must be a valid email address e.g. username@example.com" required />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="e.g. johndoe@example.com"
+                  title="It must be a valid email address e.g. username@example.com"
+                  autocomplete="email"
+                  required
+                />
                 <span class="validity"></span>
               </div>
               <div class="group">
                 <label for="phone">PHONE NUMBER</label>
-                <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" title="11 characters that must match the following pattern: 3 numbers followed by a hyphen, another 3 numbers followed by a hyphen and 3 numbers at the end." maxlength="11" placeholder="e.g. 111-222-333" required />
+                <input
+                  type="tel"
+                  id="phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                  title="11 characters that must match the following pattern: 3 numbers followed by a hyphen, another 3 numbers followed by a hyphen and 3 numbers at the end."
+                  maxlength="11"
+                  placeholder="e.g. 111-222-333"
+                  autocomplete="tel"
+                  required
+                />
                 <span class="validity"></span>
               </div>
             </div>
@@ -100,15 +140,35 @@
             <div class="input-group">
               <div class="group">
                 <label for="passwod1">PASSWORD</label>
-                <input class="error" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$" id="passwod1" placeholder="********" minlength="8" maxlength="15" title="
-                It must include at least one number, at least one lowercase letter, at least one uppercase letter, and at least one special character. The password must be between 8 and 15 characters long." required />
+                <input
+                  class="error"
+                  type="password"
+                  pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$"
+                  id="passwod1"
+                  placeholder="********"
+                  minlength="8"
+                  maxlength="15"
+                  title="It must include at least one number, at least one lowercase letter, at least one uppercase letter, and at least one special character. The password must be between 8 and 15 characters long."
+                  autocomplete="new-password"
+                  required
+                />
                 <span class="validity"></span>
                 <i class="fa-regular fa-eye"></i>
               </div>
               <div class="group">
                 <label for="passwod2">CONFIRM PASSWORD</label>
-                <input class="error" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$" id="passwod2" placeholder="********" minlength="8" maxlength="15" title="
-                It must include at least one number, at least one lowercase letter, at least one uppercase letter, and at least one special character. The password must be between 8 and 15 characters long." required />
+                <input
+                  class="error"
+                  type="password"
+                  pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$"
+                  id="passwod2"
+                  placeholder="********"
+                  minlength="8"
+                  maxlength="15"
+                  title="It must include at least one number, at least one lowercase letter, at least one uppercase letter, and at least one special character. The password must be between 8 and 15 characters long."
+                  autocomplete="new-password"
+                  required
+                />
                 <span class="validity"></span>
                 <i class="fa-regular fa-eye"></i>
               </div>
@@ -116,8 +176,10 @@
           </div>
           <span class="match-message">* Passwords do not match</span>
           <div class="button-container">
-            <input type="submit" id="btn-submit" value="Create Account">
-            <p class="login-text">Already have an account? <a class="login-link" href="">Log in</a></p>
+            <input type="submit" id="btn-submit" value="Create Account" />
+            <p class="login-text">
+              Already have an account? <a class="login-link" href="">Log in</a>
+            </p>
           </div>
         </form>
       </div>
