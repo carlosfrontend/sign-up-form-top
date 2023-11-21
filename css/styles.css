@@ -254,6 +254,10 @@ body {
   padding-left: .5em;
 }
 
+.input-group:nth-child(3) input{
+  outline: 1px solid var(--error-color);
+}
+
 /* @media screen and (max-width: 1424px) {
   .header-text {
     font-size: 3rem;
