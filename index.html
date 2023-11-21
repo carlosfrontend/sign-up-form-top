@@ -72,34 +72,44 @@
             <div class="input-group">
               <div class="group">
                 <label for="firstname">FIRST NAME</label>
-                <input type="text" id="firstname" placeholder="e.g. John" />
+                <input type="text" pattern="[a-zA-Z]{2,20}" title="It must have at least 2 uppercase or lowercase letters and a maximum of 20 characters.
+                " id="firstname" minlength="2" maxlength="20"  placeholder="e.g. John" required />
+                <span class="validity"></span>
               </div>
               <div class="group">
                 <label for="lastname">LAST NAME</label>
-                <input type="text" id="lastname" placeholder="e.g. Doe" />
+                <input type="text" pattern="[a-zA-Z]{2,20}" title="It must have at least 2 uppercase or lowercase letters and a maximum of 20 characters." id="lastname" minlength="2" maxlength="20" placeholder="e.g. Doe" required />
+                <span class="validity"></span>
               </div>
             </div>
 
             <div class="input-group">
               <div class="group">
                 <label for="email">EMAIL</label>
-                <input type="email" id="email" placeholder="e.g. johndoe@domain" />
+                <input type="email" id="email" placeholder="e.g. johndoe@example.com" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,63})$" title="
+                It must be a valid email address e.g. username@example.com" required />
+                <span class="validity"></span>
               </div>
               <div class="group">
                 <label for="phone">PHONE NUMBER</label>
-                <input type="tel" id="phone" placeholder="+34-123-456-789" />
+                <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" title="11 characters that must match the following pattern: 3 numbers followed by a hyphen, another 3 numbers followed by a hyphen and 3 numbers at the end." maxlength="11" placeholder="e.g. 111-222-333" required />
+                <span class="validity"></span>
               </div>
             </div>
 
             <div class="input-group">
               <div class="group">
                 <label for="passwod1">PASSWORD</label>
-                <input class="error" type="password" id="passwod1" placeholder="********" />
+                <input class="error" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$" id="passwod1" placeholder="********" minlength="8" maxlength="15" title="
+                It must include at least one number, at least one lowercase letter, at least one uppercase letter, and at least one special character. The password must be between 8 and 15 characters long." required />
+                <span class="validity"></span>
                 <i class="fa-regular fa-eye"></i>
               </div>
               <div class="group">
                 <label for="passwod2">CONFIRM PASSWORD</label>
-                <input class="error" type="password" id="passwod2" placeholder="********" />
+                <input class="error" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$" id="passwod2" placeholder="********" minlength="8" maxlength="15" title="
+                It must include at least one number, at least one lowercase letter, at least one uppercase letter, and at least one special character. The password must be between 8 and 15 characters long." required />
+                <span class="validity"></span>
                 <i class="fa-regular fa-eye"></i>
               </div>
             </div>
