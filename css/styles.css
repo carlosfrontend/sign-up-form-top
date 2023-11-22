@@ -245,7 +245,7 @@ body {
   font-weight: 700;
 }
 
-.fa-eye{
+.fa-eye, .fa-eye-slash{
   position: relative;
   bottom: 5.2vh;
   left: 18vw;
@@ -254,6 +254,7 @@ body {
   color:var(--eye-color);
   border-left: 1px solid var(--eye-color);
   padding-left: .5em;
+  width: 1vw;
 }
 
 .input-group:nth-child(3) input{
