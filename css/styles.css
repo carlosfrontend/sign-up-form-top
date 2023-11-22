@@ -257,10 +257,6 @@ body {
   width: 1vw;
 }
 
-.input-group:nth-child(3) input{
-  outline: 1px solid var(--error-color);
-}
-
 .group > input + span{
   position: relative;
   bottom: 5vh;
@@ -281,4 +277,20 @@ body {
   color:var(--success-color);
   padding-left: 5px;
   font-size: 2rem;
+}
+
+.input-error{
+  outline: 1px solid var(--error-color);
+}
+
+.input-success{
+  outline: 1px solid var(--success-color);
+}
+
+.success{
+  color:var(--success-color);
+}
+
+.response-title{
+  color:purple;
 }

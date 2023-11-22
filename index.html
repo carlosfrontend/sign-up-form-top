@@ -72,7 +72,7 @@
           <p>Sign up now to get started.</p>
           <p>You know you want to.</p>
         </div>
-        <form action="" id="contact-form">
+        <form action="response.html" id="contact-form">
           <h1 class="form-title">Let's do this!</h1>
           <div class="fields-container">
             <div class="input-group">
@@ -141,7 +141,7 @@
               <div class="group">
                 <label for="password1">PASSWORD</label>
                 <input
-                  class="error"
+                class="input-error"
                   type="password"
                   pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$"
                   id="password1"
@@ -158,7 +158,7 @@
               <div class="group">
                 <label for="password2">CONFIRM PASSWORD</label>
                 <input
-                  class="error"
+                class="input-error"
                   type="password"
                   pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$"
                   id="password2"
@@ -174,7 +174,7 @@
               </div>
             </div>
           </div>
-          <span class="match-message">* Passwords do not match</span>
+          <span class="match-message error">* Passwords do not match</span>
           <div class="button-container">
             <input type="submit" id="btn-submit" value="Create Account" />
             <p class="login-text">

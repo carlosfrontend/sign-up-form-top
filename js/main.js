@@ -1,8 +1,14 @@
 const firstName = document.querySelector("#firstname");
+const lastName = document.querySelector("#lastname");
 const eye1 = document.querySelector("#eye1");
 const eye2 = document.querySelector("#eye2");
 const password1 = document.querySelector("#password1");
 const password2 = document.querySelector("#password2");
+const form = document.getElementById("contact-form");
+const regex =
+  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+const matchMessage = document.querySelector(".match-message");
+const responseTitle = document.querySelector(".response");
 
 firstName.focus(); // Puts the focus in the first field
 
@@ -26,5 +32,42 @@ const showPassword2 = () => {
   }
 };
 
+const checkPasswords = () => {
+  if (password1.value.match(regex) && password2.value.match(regex)) {
+    if (password1.value === password2.value) {
+      console.log("Son iguales");
+      matchMessage.textContent = "* Passwords matched";
+      matchMessage.classList.remove("error");
+      matchMessage.classList.add("success");
+      password1.classList.remove("input-error");
+      password1.classList.add("input-success");
+      password1.blur();
+      password2.classList.remove("input-error");
+      password2.classList.add("input-success");
+      password2.blur();
+    }
+  } else {
+    if (password1.value !== password2.value) {
+      console.log("Son distintas");
+      matchMessage.textContent = "* Passwords not matched";
+      matchMessage.classList.remove("success");
+      matchMessage.classList.add("error");
+      password1.classList.remove("input-success");
+      password1.classList.add("input-error");
+      password2.classList.remove("input-success");
+      password2.classList.add("input-error");
+    }
+  }
+};
+
+password1.addEventListener("keyup", checkPasswords);
+password2.addEventListener("keyup", checkPasswords);
+
 eye1.addEventListener("click", showPassword1);
 eye2.addEventListener("click", showPassword2);
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault()
+  document.write('<a href="index.html">Back</a>');
+  document.writeln(`<h1>Welcome ${firstName.value} ${lastName.value} !</h1>`)
+});
