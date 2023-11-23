@@ -34,7 +34,6 @@ const showPassword2 = () => {
 const checkPasswords = () => {
   if (password1.value.match(regex) && password2.value.match(regex)) {
     if (password1.value === password2.value) {
-      console.log("Son iguales");
       matchMessage.textContent = "* Passwords matched";
       matchMessage.classList.remove("error");
       matchMessage.classList.add("success");
@@ -47,7 +46,6 @@ const checkPasswords = () => {
     }
   } else {
     if (password1.value !== password2.value) {
-      console.log("Son distintas");
       matchMessage.textContent = "* Passwords not matched";
       matchMessage.classList.remove("success");
       matchMessage.classList.add("error");
