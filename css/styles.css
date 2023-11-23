@@ -448,4 +448,16 @@ body {
     font-weight: 400;
     color: black;
 }
+.fa-eye,
+  .fa-eye-slash {
+    top: -6.5vh;
+    left: 36vh;
+  }
+  .group > input:invalid + span::after {
+    left: 62.5vw;
+    top: -2vh;
+}
+.group > input {
+  width: 80vw;
+}
 }
