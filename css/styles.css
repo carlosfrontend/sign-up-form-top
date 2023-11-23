@@ -345,7 +345,7 @@ body {
   .group > input {
     width: 32vw;
   }
-  .group > input:invalid + span::after {
+  .group > input:invalid + span::after, input:valid + span::after {
     left: 13vw;
   }
   #btn-submit {
@@ -368,96 +368,4 @@ body {
   .fa-eye-slash {
     left: 30vw;
   }
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    height: 190vh;
-  }
-  .input-group {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .group > input {
-    width: 60vw;
-  }
-  #contact-form {
-    height: 84vh;
-  }
-  .group > input:invalid + span::after {
-    left: 44vw;
-    top: -0.6vh;
-  }
-  #btn-submit {
-    width: 53vw;
-  }
-  .photo-mention {
-    top: -48vh;
-    font-size: 4.3vw;
-  }
-  .wiki-mention {
-    font-size: 3.5vw;
-  }
-  .fa-eye,
-  .fa-eye-slash {
-    left: 53vw;
-  }
-}
-
-@media (max-width: 772px) {
-  .container {
-    flex-direction: column;
-    height: 210vh;
-  }
-  .button-container {
-    top: 6vh;
-  }
-  #btn-submit {
-    width: 26vw;
-    font-size: 3vw;
-  }
-}
-
-@media (max-width: 754px) {
-  .button-container {
-    top: 10vh;
-  }
-}
-@media (max-width: 481px) {
-  .main-content {
-    height: 60vh;
-    width: 21ch;
-}
-  #contact-form {
-    height: 100vh;
-  }
-  .button-container {
-    top: 5vh;
-  }
-  #btn-submit{
-    width: 40vw;
-    height: 8vh;
-    font-size: 4vw;
-  }
-  .login-text {
-    position: relative;
-    padding-bottom: 1rem;
-    top: 2vh;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: black;
-}
-.fa-eye,
-  .fa-eye-slash {
-    top: -6.5vh;
-    left: 36vh;
-  }
-  .group > input:invalid + span::after {
-    left: 62.5vw;
-    top: -2vh;
-}
-.group > input {
-  width: 80vw;
-}
 }
