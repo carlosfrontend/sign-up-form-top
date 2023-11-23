@@ -73,7 +73,7 @@ form.addEventListener("submit", (e) => {
   height:100%;
   overflow:hidden;
   background-color: rgb(148 6 6 / 76%);
-  background-image: url(../images/mountains.jpg);
+  background-image: url(https://raw.githubusercontent.com/carlosfrontend/sign-up-form-top/main/images/mountains.jpg);
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
