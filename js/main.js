@@ -87,10 +87,8 @@ form.addEventListener("submit", (e) => {
   color:white;
   }
   </style>
-  <img style="width:3vw;" src='../images/Wikipedia_Sourcing_Month_Logo.svg'/>
   <h1>Welcome ${firstName.value} ${lastName.value} !</h1>
   <h2>Thanks for register with us!<h2>
   <p>You will receipe a message in <a href="mailto:${email.value}">${email.value}</a> in a few minutes.</p>
-  
   `);
 });
